@@ -1,10 +1,17 @@
 ## Getting started
 
+In this little book we will show that Pharo is easy to learn for a Pythonist.
+
 - Dynamically typed
 - REPL everywhere
+- Objects everywhere
 
+Pharo dynamic nature is close to the one of Python. 
+Now Pharo is just uniform: the computation is expressed using only objects answering messages and lambas (lexical closure).
 
 ## Arithmetic
+
+Let's start with basic messages for arithmetic operations.
 
 #### Basic operators
 
@@ -196,7 +203,7 @@ testReciprocal
 		assert: (-3 / 5) reciprocal equals: -5 / 3
 ```
 
-# Finder: a super powerful helper
+## Finder: a super powerful helper
 Pharo offers a really nice set of powerful tool. 
 The first one is the Finder. 
 
@@ -207,7 +214,7 @@ The first one is the Finder.
 ### Example-based methods
 
 
-# Booleans and basic control flow 
+## Booleans and basic control flow 
 
 
 ### Booleans
@@ -649,4 +656,13 @@ Pharo's OrderedCollection offers a large API. For example here are all the metho
 
 The following script generates the list taking into account locally defined methods of the class `OrderedCollection`.
 
-OrderedCollection offers way to insert, delete, reverse, sort, and verify various predicates.
+`OrderedCollection` offers way to insert, delete, reverse, sort, and verify various predicates.
+
+
+
+
+
+
+
+
+
