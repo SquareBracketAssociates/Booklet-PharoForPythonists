@@ -1,3 +1,11 @@
+/Pharo.*
+/pharo
+/pharo-ui
+/pillar
+/mustache
+/pharo-vm/
+/build/
+/_result/
 _result
 **/*.aux 
 **/*.DS_Store
