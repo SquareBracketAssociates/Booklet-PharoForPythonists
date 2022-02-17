@@ -567,10 +567,29 @@ g value: 3 value: 4
 
 
 
+
+
+
 ## First data structures
 
-Pharo defines many different data structures such as `Set`, `Array`, `OrderedCollection`, `Dictionary`, `Bag`... 
-Now we will show how Python lists are close to Pharo's ordered collections.
+Pharo defines many different data structures such as `Set`, `Array`, `OrderedCollection`, `Dictionary`, `Bag`, `LinkedList`, ... 
+We will start by an overview of the common data structure objects.
+Then we will show how Python lists are close to Pharo's ordered collections.
+
+## Basic mapping
+Python offers tuples, lists, dictionaries, and arrays.
+Pharo proposes nearly the same with some difference we briefly sketch now. 
+
+- Python lists - Pharo ordered collections. `OrderedCollection`'s are growable data structures where elements can be freely added, inserted or removed. `OrderedCollection`s are similar to `LinkedList` which support better insertion at the cost of wrapping the value in cells.
+
+- Python tuples - Pharo pairs. Pharo does not have immutable pairs as in Python. It offers simple mutable pairs. Such pair only works with two elements (a key and value) and are not supported to values in multiple variables.
+
+- Python arrays - Pharo arrays. Arrays in Pharo are similar to the ones in Python. They are fixed size arrays. They can hold any objects. Pharo offers different ways to express arrays: literal arrays (using `#( a)` ) are parse time arrays which will first only contain literal objects (true, nil, string, numbers, arrays), dynamically-created arrays 
+(using `{ 1 + 2 . 3+3 }` an array of two elements 3 and 6) which can initially contain any objects.
+
+- Python dictionaries - Pharo dictionaries. A Pharo `Dictionary` is growable key value data structure. Several variations exists whether we want to compare based on equality or identity.
+
+In addition Pharo supports many other data structures. The most common ones being `Set`, `Bag`, 
 
 ### List / OrderedCollection
 
